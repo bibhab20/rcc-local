@@ -1,5 +1,5 @@
 # Introduction
-This is a local web app for RCC Detailing. You can run it in your system add the access the app in your web browser.
+This is a local web app for RCC Detailing. You can run it in your system and the access the app in your web browser.
 # Prerequisites
 * You know the basics like running a command and navigating to desired directory.
 # Set up (need to do just once)
@@ -118,7 +118,7 @@ cd combined-repo
 # Run and access the app
 ## Step 1: Build and run the app
 * Make sure you in rcc-local directory.(By default you should be if you are following the steps along for the first time set up)
-* You can check that by running the command `pwd` in your terminal. It should end with `rcc-local`
+* You can check that by running the command `pwd`(for mac) or `echo %cd%`(for windows)in your terminal. It should end with `rcc-local`
 * If you are running it for the first time. Give execution permission to the start.sh file
 ```shell
 chmod +x start.sh
@@ -130,7 +130,7 @@ chmod +x start.sh
 This will build the Docker images and start the containers for both the backend and frontend applications.
 ## Step 2: Access the app
 * Frontend: Open your browser and navigate to http://localhost:3000.
-* Backend: The backend application will be running on http://localhost:8080.(you don't need to access this)
+* Backend: The backend application will be running on http://localhost:8080 (you don't need to access this)
 
 # Accessing logs
 In case of any failures or unexpected behaviour you might want to check the logs. Follow the steps below to access the logs of individual apps for combined.
@@ -141,7 +141,7 @@ docker logs rcc-backend
 docker-compose logs rcc-backend
 ```
 
-### backend app
+### frontend app
 ```shell
 docker logs rcc-frontend
 docker-compose logs rcc-frontend
